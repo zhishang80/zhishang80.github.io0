@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" width="device-width, initial-scale=1.0">
+	<meta name="description" content="Current researches for Zhi Shang, a CFD Developer.">
+	<meta name="author" content="Zhi Shang">
+	<!-- favicon
+	<link rel="shortcut icon" href="/img/ico/favicon.png">
+	-->
+	<title>Rsearch | Zhi Shang | CFD, HPC, Researcher.</title>		
+	<!-- styles -->
+	<link href="/css/bootstrap.css" rel="stylesheet">
+	<link href="/css/jumbotron-narrow.css" rel="stylesheet">
+	<link href="/css/style.css" rel="stylesheet">
+	
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+  <script src="../../assets/js/html5shiv.js"></script>
+  <script src="../../assets/js/respond.min.js"></script>
+	<![endif]-->
+	<!-- google analytics - i will not share this data with google -->
+</head>
+
+	
+	<body>
+		<div class="container">
+			
+			<div class="header">
+	<ul class="nav nav-pills pull-right">
+		<li class="active"><a href="/research" title="Research">Research</a></li>
+		<li class=""><a href="/cv" title="CV">CV</a></li>
+		<!-- <li class=""><a href="/notes" title="Notes">Notes</a></li> -->
+		<li class="passive"><a href="/contact" title="Contact">Contact</a></li>
+	</ul>
+	<h3 class="text-muted"><a href="/">Zhi Shang</a></h3>
+</div> <!-- /header -->
+
+			
+			<div class="research">
+    <h2 >Project: Multiphase flow in porous media</h2>
+    <img style="width: 200px; height: 220px;" src="/research/img/porousmedia.gif">
+    <div itemscope="" itemtype="http://data-vocabulary.org/Person" class="col-sm-5">
+	<p >The multiphase flow solver was developed using C++ for OpenFOAM.</p>
+	<p >This solver is able to handle gas-oil-water-particle 4 phase flow with VOF (volume of fluid).</p>
+	<p >In the animation, the porosity is 0.3; the gas was colored by blue; water was colored by red; oil was colored by grey; solid particles were colored by particle sizes.</p>
+    </div>
+    <br> </br>
+    
+    <h2 >Project: Multiphase flow in FSI (fluid structure interaction)</h2>
+    <img style="width: 220px; height: 220px;" src="/research/img/propellervof.gif">
+    <img style="width: 220px; height: 220px;" src="/research/img/propellerpar.gif">
+    <div itemscope="" itemtype="http://data-vocabulary.org/Person" class="col-sm-5">
+	<p >The multiphase flow solver was developed using C++ for OpenFOAM.</p>
+	<p >This solver is able to handle gas-oil-water-particle 4 phase flow with VOF (volume of fluid).</p>
+	<p >In the animation, the propellor rotates with 158 rad/s; the left is gas-oil-water without particles; the right is gas-oil-water-particle with solid particles.</p>
+    </div> 
+    <br> </br>
+    
+    <h2 >Project: Particle transport in shale fracture</h2>
+    <img style="width: 350px; height: 200px;" src="/research/img/shalegeo.png">
+    <img style="width: 350px; height: 200px;" src="/research/img/shalemesh.png">
+    <img style="width: 150px; height: 100px;" src="/research/img/shalepar.png">
+    <img style="width: 500px; height: 350px;" src="/research/img/shaleani.gif">
+    <div itemscope="" itemtype="http://data-vocabulary.org/Person" class="col-sm-5">
+	<p >The MPPICFoam solver was used in OpenFOAM.</p>
+	<p >The simulation for 3600 seconds (1 hour) is under 8 processors done in 1 day with MP-PIC (multiphase particle in cell) DPM (discrete particle model) techneque.</p>
+	<p >In the animation, the sand particles with everage 300 micrometre normal distribution (100 micrometre - 500 micrometre) inject into the shale fracture with 1000 ft long, 200 ft height and 0.1 in width. Proppant density is 1000 kg/m<sup>3</sup> and sand particle density is 2650 kg/m<sup>3</sup>. The flow rate is 40 bpm with sand concentration 2.5 lb/gal.</p>
+    </div> 
+    <br> </br>
+    
+    <h2 >Project: Dam break</h2>
+    <img style="width: 250px; height: 200px;" src="/research/img/velocity.gif">
+    <img style="width: 250px; height: 200px;" src="/research/img/waterdepth.gif">
+    <div itemscope="" itemtype="http://data-vocabulary.org/Person" class="col-sm-5">
+	<p >The solver was optimized by hybrid MPI/OpenMP programming for Telemac.</p>
+	<p >This solver is able to handle the shallow water simulation.</p>
+	<p >In the animation, the water washed down from the dam break to the sea through a river in the mountain and a coastal city over 100 kilometers on the journey.</p>
+    </div>    
+    <br> </br>
+    
+    <h2 >Project: Faraday wave resonance</h2>
+    <img style="width: 250px; height: 200px;" src="/research/img/slosh.gif">
+    <img style="width: 250px; height: 200px;" src="/research/img/faraday.png">
+    <div itemscope="" itemtype="http://data-vocabulary.org/Person" class="col-sm-5">
+	<p >The VOF solver was developed using C++ for OpenFOAM.</p>
+	<p >This solver is able to handle the system ossillation.</p>
+	    <p >In the animation, the gravity was revised by G=(-g+a*cos(omg*t))e<sub>z</sub>.</p>
+    </div>    
+    <br> </br>
+    
+    <h2 >Project: Oscillation wave of free surface at low and high frequency system oscillation </h2>
+    <img style="width: 250px; height: 200px;" src="/research/img/flatBottom.gif">
+    <img style="width: 250px; height: 200px;" src="/research/img/ossilation.gif">
+    <div itemscope="" itemtype="http://data-vocabulary.org/Person" class="col-sm-5">
+	<p >The VOF solver was developed using C++ for OpenFOAM.</p>
+	<p >This solver is able to handle the free surface ossillation.</p>
+	<p > In the animation, the left is at low frequent system oscillation and right is at high frequency system oscillation.</p>
+    </div>
+    <br> </br>
+    
+    <h2 >Project: Growth of small disturbances in supersonic boundary layer</h2>
+    <img style="width: 250px; height: 200px;" src="/research/img/mach6a.png">
+    <img style="width: 250px; height: 200px;" src="/research/img/mach6b.gif">
+    <div itemscope="" itemtype="http://data-vocabulary.org/Person" class="col-sm-5">
+	<p >The in-house DNS code was developed using Fortran90.</p>
+	<p >The MPI was used to parallelize the code.</p>
+	<p >In the animation, the Mach number is 6 and Re = 20000.</p>
+    </div>    
+    <br> </br>
+    
+    <h2 >Project: Heat transfer of super critical water </h2>
+    <img style="width: 350px; height: 250px;" src="/research/img/swphy.png"> &emsp; &emsp; &emsp; &emsp; &emsp;
+    <img style="width: 350px; height: 250px;" src="/research/img/swsim.png">
+    <img style="width: 250px; height: 250px;" src="/research/img/swcyl.png">
+    <img style="width: 250px; height: 250px;" src="/research/img/swnuc.png">
+    <div itemscope="" itemtype="http://data-vocabulary.org/Person" class="col-sm-5">
+	<p >The user subroutine was developed for physical properties of super critical water using Fortran in STAR-CD.</p>
+	<p >This user subroutine is able to handle the heat transfer with large change of fluid physical properties.</p>
+	<p >The pictures show the heat transfer component and the entire SCWR (supercritical water reactor).</p>
+    </div>    
+    <br> </br>
+    
+    <h2 >Project: Super cavitation around a submarine</h2>
+    <img style="width: 250px; height: 200px;" src="/research/img/submesh.png">
+    <img style="width: 250px; height: 200px;" src="/research/img/subcavn.gif">
+    <div itemscope="" itemtype="http://data-vocabulary.org/Person" class="col-sm-5">
+	<p >The interPhaseChangeFoam solver in OpenFOAM was used.</p>
+	<p >ICEM-CFD was used to generate the mesh due to high mesh quality requirements from cavitation phase change simulations.</p>
+	<p >The pictures show the super cavitation growth around the submarine at the cavitation number = 0.1.</p>
+    </div>
+    <br> </br>
+    
+    <h2 >Project: Gas-water two-phase flow in a horizontal pipe</h2>
+    <img style="width: 250px; height: 200px;" src="/research/img/hbubble.png">
+    <img style="width: 250px; height: 200px;" src="/research/img/hbubbles.png">
+    <div itemscope="" itemtype="http://data-vocabulary.org/Person" class="col-sm-5">
+	<p >The UDF (user defined function) was developed using C for FLUENT.</p>
+	<p >The UDF (user defined function) was coded for the novel Lagrangian algebraic slip mixture model (LASMM).</p>
+	<p >The pictures show the bubble in a horizotal tube and comparison with experiment and simulations of CFX (two fluid model) and FLUENT (ASMM).</p>
+    </div>
+    <br> </br>
+    
+    <h2 >Project: Complex CFD simulations on FPSO</h2>
+    <img style="width: 350px; height: 200px;" src="/research/img/fpso.png"> &emsp; &emsp; &emsp; &emsp;
+    <img style="width: 350px; height: 200px;" src="/research/img/fpsomesh.png">
+    <img style="width: 250px; height: 210px;" src="/research/img/fpsosim1.png">
+    <img style="width: 250px; height: 210px;" src="/research/img/fpsosim2.png">
+    <div itemscope="" itemtype="http://data-vocabulary.org/Person" class="col-sm-5">
+	<p >The geometry is in STL format.</p>
+	<p >The mesh was generated using snappyHexMesh in OpenFOAM.</p>
+	<p >The pictures show the exhaust gas released from the chimneys on FPSO (floating production storage and offloading) simulated by FLUENT using the mesh generated by OpenFOAM and post-processed by Ensight.</p>
+    </div>
+    <br> </br>
+    
+    <h2 >Project: LBM for multiphase flow</h2>
+    <img style="width: 350px; height: 200px;" src="/research/img/lbmdrop.gif">&emsp; &emsp; &emsp; &emsp;
+    <img style="width: 350px; height: 200px;" src="/research/img/lbmpara.gif">
+    <img style="width: 350px; height: 250px;" src="/research/img/lbmspeed.png">
+    <div itemscope="" itemtype="http://data-vocabulary.org/Person" class="col-sm-5">
+	<p >The in-house code was developed using Fortran90.</p>
+	<p >The MPI was used to parallize the LBM code.</p>
+	<p >The mesh size is 1024*1024*1024 above 1 billion.</p>
+    </div>			
+</div>
+
+		
+		</div> <!-- /container -->
+	
+	</body>
+
+</html>
