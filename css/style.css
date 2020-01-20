@@ -62,3 +62,30 @@ body { padding-top: 20px; padding-bottom: 40px; font-family: 'Merriweather', Geo
   border: 1px solid orange;
 }
 
+/* Left & right buttons */
+.left, .right {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "right button" to the right */
+.right {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.left:hover, .right:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
