@@ -27,11 +27,12 @@ let fnBackGroundSlide = function(id) {
 	autoSlides.onmouseover = function () { clearInterval(timer); } //mouse over the div to stop timer for sliding
 	autoSlides.onmouseout = function () { fnSlide(); } //mouse out the div for activing slide function again.
 }
-let fnBackGroundRoll = function(id) {
+let fnBackGroundRoll = function(id1, id2) {
 	//IE normally check
 	try{document.execCommand("BackgroundImageCache", false, true);} catch(e){};	
 	//get the div ID and ul, li tag name for js from html
-	let oDiv = document.getElementById(id);
+	let oDivr = document.getElementById(id1);
+	let oDiv = document.getElementById(id2);
 	let oUl = oDiv.getElementsByTagName('ul')[0];
 	let oLi = oDiv.getElementsByTagName('li');
 	//reset up the width of div and ul for duplicating the ul with seamless scroll
@@ -40,7 +41,14 @@ let fnBackGroundRoll = function(id) {
 	oUl.innerHTML += oUl.innerHTML;
 
 	//set speed valuse to control the rolling speed
-	let speed = -6;
+	let speed = -6;	
+	oDivr.getElementsByTagName('a')[0].onclick = function() {
+		speed = -6;
+	}
+	oDivr.getElementsByTagName('a')[1].onclick = function() {
+		speed = 6;
+	}
+	
 	//set rolling function
 	let rolling = function() {
 		//
@@ -57,7 +65,7 @@ let fnBackGroundRoll = function(id) {
 	var timer = setInterval(rolling, timeDelay);
 	//set mouse event
 	oDiv.onmouseover=function() {clearInterval(timer);}
-	oDiv.onmouseout=function() {timer=setInterval(rolling, timeDelay);}
+	oDiv.onmouseout=function() {timer = setInterval(rolling, timeDelay);}
 }
 
 let ffnBackGroundRoll = function(id) {
