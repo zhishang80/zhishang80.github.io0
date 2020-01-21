@@ -48,7 +48,7 @@ let fnBackGroundRoll = function(id1, id2) {
 	oDivr.getElementsByTagName('a')[1].onclick = function() {
 		speed = 6;
 	}
-	
+
 	//set rolling function
 	let rolling = function() {
 		//
@@ -67,29 +67,3 @@ let fnBackGroundRoll = function(id1, id2) {
 	oDiv.onmouseover=function() {clearInterval(timer);}
 	oDiv.onmouseout=function() {timer = setInterval(rolling, timeDelay);}
 }
-
-let ffnBackGroundRoll = function(id) {
-	var ul = document.getElementById("id");
-    var roll = document.getElementsByClassName("roll")[0];
-    for(var i = 0; i <= 3; i++){
-        var li = document.createElement("li");
-        var child = ul.children[i];
-        li.innerHTML = child.innerHTML;
-        ul.appendChild(li);
-    }
-    var timer = null;
-    timer = setInterval(autoScroll,1);
-    var num = 0;
-    function autoScroll() {
-        num -= 0.25;
-        num <= -1200 ? num = 0 : num;
-        ul.style.left = num + "px";
-    }
-    roll.onmouseover = function () {
-        clearInterval(timer);
-    }
-    roll.onmouseout = function () {
-        timer = setInterval(autoScroll,1);
-    }
-}
-
