@@ -1,328 +1,334 @@
 <!DOCTYPE html>
-<html lang="en">
-	
-	<head>
-	<meta charset="utf-8">
-	<meta name="viewport" width="device-width, initial-scale=1.0">
-	<meta name="description" content="Current researches for Zhi Shang, a CFD Developer.">
-	<meta name="author" content="Zhi Shang">
-	<!-- favicon
-	<link rel="shortcut icon" href="/img/ico/favicon.png">
-	-->
-	<title>Rsearch | Zhi Shang | CFD, HPC, Researcher.</title>		
-	<!-- styles -->
-	<link href="/css/bootstrap.css" rel="stylesheet">
-	<link href="/css/jumbotron-narrow.css" rel="stylesheet">
-	<link href="/css/style.css" rel="stylesheet">
-	
-	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-  <script src="../../assets/js/html5shiv.js"></script>
-  <script src="../../assets/js/respond.min.js"></script>
-	<![endif]-->
-	<!-- google analytics - i will not share this data with google -->
-        </head>	
-	    <body>
-		<div class="container">			
-		    <div class="header">
-	               <ul class="nav nav-pills pull-right">
-		       <li class="active"><a href="/research" title="Research">Research</a></li>
-		       <li class=""><a href="/cv" title="CV">CV</a></li>
-		       <!-- <li class=""><a href="/notes" title="Notes">Notes</a></li> -->
-		       <li class="passive"><a href="/contact" title="Contact">Contact</a></li>
-	               </ul>
-	               <h3 class="text-muted"><a href="/">Zhi Shang</a></h3>
-                    </div> <!-- /header -->
-		
-    <div class="research">
-			 
-    <h2 >Project: Water agitation in a closed tank</h2>
-    <img style="width: 250px; height: 300px;" src="/research/img/rotationc.gif">
-    <img style="width: 250px; height: 300px;" src="/research/img/rotationr.gif">
-    <div itemscope="" itemtype="http://data-vocabulary.org/Person" class="col-sm-5">
-	<p >The overInterDyMFoam solver was used in OpenFOAM.</p>
-	<p >The Chimera (overset) grids technique was use to handle the dynamic mesh. The MULES (multidimensional universal limiter with explicit solution) algorithm was used to solve the VOF (volume of fluid) Riemann equation.</p>
-	<p >In the animation, the left is under the same direction of rotation and speed of the rotators and the right is under the opposite direction of rotation but the same speed of the rotators.</p>
-    </div>
-    <br> </br>
-
-    <h2 >Project: Multiphase flow in porous media</h2>
-    <img style="width: 200px; height: 220px;" src="/research/img/porousmedia.gif">
-    <div itemscope="" itemtype="http://data-vocabulary.org/Person" class="col-sm-5">
-	<p >The multiphase flow solver was developed using C++ for OpenFOAM.</p>
-	<p >This solver is able to handle gas-oil-water-particle 4 phase flow with VOF (volume of fluid).</p>
-	<p >In the animation, the porosity is 0.3; the gas was colored by blue; water was colored by red; oil was colored by grey; solid particles were colored by particle sizes.</p>
-    </div>
-    <div>
-	<p>Publication Journals:</p>
-	<ul>
-	<li><a href="http://www.ikprress.org/index.php/AJOMCOR/articles-press" target="_blank">Zhi Shang, Honggao Liu, James A. Lupo. Evaluation of hybrid MPI-OpenMP on discrete particle modeling for large scale parallel computing with OpenFOAM. Asian Journal of Mathematics and Computer Research, available (in press).</a></li>
-	</ul>
-	<p>Publication Conferences:</p>
-	<ul>
-	<li>Zhi Shang, Honggao Liu. High Performance Computing on Multiphase Flows in Oil Reservior at Intel Xeon Phi Knights Landing Processors. Poster at Texas A&M University booth, 30 th Supercomputing Conference (SC17), Denver, Colorado, November 13 - 16, 2017, USA. (<font color="blue">poster</font>)</li>
-	<li>Zhi Shang, Honggao Liu, James A. Lupo. CFD High Performance Computing in Oil Reserviors at Intel Xeon Phis. The 2 nd Annual Texas A&M Conference on Energy, College Station, Texas, September 25-27, 2017, USA. (<font color="blue">presentation</font>)</li> 
-	<li><a href="https://dl.acm.org/citation.cfm?doid=3093338.3093350" target="_blank">Zhi Shang, Honggao Liu. Simulating Multiphase Flows in Porous Media Using OpenFOAM on Intel Xeon Phi Knights Landing Processors. Practice & Experience in Advanced Research Computing (PEARC17), New Orleans, Louisiana, July 9 - 13, 2017, USA. (<font color="blue">presentation + article</font>)</a></li> 
-	<li>Zhi Shang, Honggao Liu. High Performance Computing of Multiphase Flow in Porous Media Network using OpenFOAM. Texas A&M Research Computing Week, College Station, Texas, June 5 - 9, 2017, USA (<font color="blue">poster</font>)</li>
-	<li>Zhi Shang, Honggao Liu. High Performance Computing at Intel Xeon Phi Knights Landing Cluster with OpenFOAM. Poster at Texas A&M University booth, 29 th Supercomputing Conference (SC16), Salt Lake City, Utah, November 13 - 18, 2016, USA. (<font color="blue">poster</font>)</li> 
-        <li>Zhi Shang, Mayank Tyagi, James A. Lupo, Honggao Liu, Krishnaswamy Nandakumar, Karsten Thompson. Large Scale CFD Simulations of Particulate Flows in Porous Media. Poster at Louisiana State University booth, 27th Supercomputing Conference (SC15), Austin, Texas, November 15 - 20, 2015, USA. (<font color="blue">poster</font>)</li> 
-        <li><a href="https://meetings.aps.org/Meeting/DFD15/Session/M7.8" target="_blank">Zhi Shang, Honggao Liu, Krishnaswamy Nandakumar, Mayank Tyagi, James A. Lupo, Karsten Thompson. Discrete Particle Model for Porous Media Flow using OpenFOAM at Intel Xeon Phi Coprocessor. American Physical Society, Division of Fluid Dynamics 68th Annual Meeting, Boston, Massachusetts, November 22 - 24, 2015, USA. (<font color="blue">presentation</font>)</a></li>
-	<li><a href="http://www.hpcsociety.org/seg2015abstracts#cole" target="_blank">Zhi Shang. High Performance Computing at Intel Xeon Phi Coprocessor for Discrete Particle Model of OpenFOAM. Presentation at HPC theater, Society of Exploration Geophysicists (SEG), International Explosion and 85th Annual Meeting, New Orleans, Louisiana, October 18 - 23, 2015, USA. (<font color="blue">presentation</font>)</a></li>
-	<li>Zhi Shang, Honggao Liu, Krishnaswamy Nandakumar, Mayank Tyagi, James A. Lupo, Karsten Thompson. High Performance Computing at Intel Xeon Phi Coprocessor Using Native and Symmetric Modes for Discrete Particle Model of OpenFOAM. 3 rd Annual EPIC Workshop on Enabling Process Innovation through Computation, Louisiana State University, Baton Rouge, Louisiana, May 1, 2015, USA. (<font color="blue">poster</font>)</li>
-        </ul>
-	<p>Publication Books:</p>        
-	<ul>
-	<li><a href="https://www.lap-publishing.com/catalog/details//store/gb/book/978-3-659-80852-4/high-performance-computing-of-multiphase-flows-in-porous-media" target="_blank">Zhi Shang, Honggao Liu, James A. Lupo. High Performance Computing of Multiphase Flows in Porous Media - Using OpenFOAM and the Intel Xeon Phi. Lambert Academic Publishing, OmniScriptum GmbH & Co. KG, Bahnhofstraße 28, 66111 Saarbrücken, Germany, 2017.</a></li> 
-	<!--<li><a href="" target="_blank"> </a></li>-->
-	</ul>
-    </div>
-    
-    <h2 >Project: Multiphase flow in FSI (fluid structure interaction)</h2>
-    <img style="width: 220px; height: 220px;" src="/research/img/propellervof.gif">
-    <img style="width: 220px; height: 220px;" src="/research/img/propellerpar.gif">
-    <div itemscope="" itemtype="http://data-vocabulary.org/Person" class="col-sm-5">
-	<p >The multiphase flow solver was developed using C++ for OpenFOAM.</p>
-	<p >This solver is able to handle gas-oil-water-particle 4 phase flow with VOF (volume of fluid).</p>
-	<p >In the animation, the propellor rotates with 158 rad/s; the left is gas-oil-water without particles; the right is gas-oil-water-particle with solid particles.</p>
-    </div> 
-    <br> </br>
-    
-    <h2 >Project: Particle transport in shale fracture</h2>
-    <!--<img style="width: 350px; height: 200px;" src="/research/img/shalegeo.png">-->
-    <img style="width: 250px; height: 250px;" src="/research/img/shalemesh.png"> 
-    <img style="width: 200px; height: 250px;" src="/research/img/shalepar.png">
-    <div itemscope="" itemtype="http://data-vocabulary.org/Person" class="col-sm-5">
-	<p >The MPPICFoam solver was used in OpenFOAM.</p>
-	<p >The simulation for 3600 seconds (1 hour) is under 8 processors done in 1 day with DPM (discrete particle model) under MP-PIC (multiphase particle in cell) techneque.</p>
-	<p >In the animation, the sand particles with everage 300&microm normal distribution (100&microm; - 500&microm;) inject into the shale fold fracture with 584.8 ft long, 98.4 ft height and 0.3 in width. Proppant density is 1000 kg/m<sup>3</sup> and sand particle density is 2650 kg/m<sup>3</sup>. The flow rate is 40 bpm with sand concentration 2.5 lb/gal.</p>
-    </div> 	
-    <img style="width: 900px; height: 500px;" src="/research/img/shaleani.gif">    
-    <div>
-	<p>Publication Conferences:</p>
-	<ul>
-	<li><a href="https://www.abstractsonline.com/pp8/#!/7868/presentation/2007" target="_blank">Shaowen Mao, Zhi Shang, Seunghwan Chun, Jiawei Li, Kan Wu. An efficient three-dimensional multiphase particle-in-cell model for proppant transport in the field scale. 2019 URTeC, Denver, Colorado | Colorado Convention Center, 22-24 July 2019 (URTeC: 462).(<font color="blue">presentation+article</font>)</a></li>
-	</ul>
-	<p>Media reports:</p>
-	<ul>
-	<li><a href="https://www.rdworldonline.com/transforming-raw-oil-and-gas-reservoir-data-into-actionable-insights/" target="_blank">Linda Barney. Transforming Raw Oil and Gas Reservoir Data into Actionable Insights. Wed, 10/21/2015 - 10:45am</a></li>
-	</ul>
-    </div>
-    
-    <h2 >Project: Dam break</h2>
-    <img style="width: 250px; height: 200px;" src="/research/img/velocity.gif">
-    <img style="width: 250px; height: 200px;" src="/research/img/waterdepth.gif">
-    <div itemscope="" itemtype="http://data-vocabulary.org/Person" class="col-sm-5">
-	<p >The solver was optimized by hybrid MPI/OpenMP programming for Telemac.</p>
-	<p >This solver is able to handle the shallow water simulation.</p>
-	<p >In the animation, the water washed down from the dam break to the sea through a river in the mountain and a coastal city over 100 kilometers on the journey.</p>
-    </div>   
-    <br> </br> 
-    <div>
-	<p>Publication Journals:</p>
-	<ul>
-	<li><a href="https://www.worldscientific.com/doi/abs/10.1142/S1793962314720015" target="_blank">Zhi Shang. High performance computing for flood simulation using Telemac based on hybrid MPI/OpenMP parallel programming. International Journal of Modeling, Simulation, and Scientific Computing, 5(4), 2014, Article ID 1472001, 13 pages.</a></li>
-	</ul>
-	<p>Publication Conferences:</p>
-	<ul>
-	<li><a href="http://www.hector.ac.uk/cse/distributedcse/reports/telemac/" target="_blank">Zhi Shang. Developing the TELEMAC system for HEVToR (phase 2b & beyond). HECToR Distributed CSE Support Technical Meeting, 4 - 5 October 2011, Manchester, UK. (<font color="blue">presentation</font>)</a></li>
-	</ul>
-    </div>
-    
-    <h2 >Project: Faraday wave resonance</h2>
-    <img style="width: 250px; height: 200px;" src="/research/img/slosh.gif">
-    <img style="width: 250px; height: 200px;" src="/research/img/faraday.png">
-    <div itemscope="" itemtype="http://data-vocabulary.org/Person" class="col-sm-5">
-	<p >The VOF solver was developed using C++ for OpenFOAM.</p>
-	<p >This solver is able to handle the system ossillation.</p>
-	<p >In the animation, the gravity was revised by G=(-g+a*cos(omg*t))e<sub>z</sub>.</p>
-    </div>   
-    <div>
-	<p>Publication Journals:</p>
-	<ul>
-	<li><a href="https://www.sciencedirect.com/science/article/pii/S0017931017317933" target="_blank">Y.F. Yap, H.Y. Li, J. Lou, L.S. Pan, Z. Shang.Numerical modeling of three-phase flow with phase change using the level-set method. International Journal of Heat and Mass Transfer, 115, 2017, 730-740.</a></li>
-	<li><a href="https://www.worldscientific.com/doi/abs/10.1142/S021987621750013X" target="_blank">Zhi Shang, Jing Lou, Hongying Li. Simulations of flow transitions in a vertical pipe using coupled level set and VOF method. International Journal of Computational Methods, 14(2), 2017, Article ID 1750013, 17 pages.</a></li>
-	</ul>
-	<p>Publication Conferences:</p>
-	<ul>
-	<li><a href="http://meetings.aps.org/Meeting/DFD14/Session/L33.1" target="_blank">Hongying Li, Jing Lou, Zhi Shang. Numerical Modelling of Three-Fluid Flow Using The Level-set Method. American Physical Society, Division of Fluid Dynamics 67 th Annual Meeting, San Francisco, California, November 23 - 25, 2014, USA.(<font color="blue">presentation</font>)</a></li>
-	</ul>
-    </div>
-    
-    <h2 >Project: Oscillation wave of free surface at low and high frequency system oscillation </h2>
-    <img style="width: 250px; height: 200px;" src="/research/img/flatBottom.gif">
-    <img style="width: 250px; height: 200px;" src="/research/img/ossilation.gif">
-    <div itemscope="" itemtype="http://data-vocabulary.org/Person" class="col-sm-5">
-	<p >The VOF solver was developed using C++ for OpenFOAM.</p>
-	<p >This solver is able to handle the free surface ossillation.</p>
-	<p >In the animation, the left is at low frequent system oscillation and right is at high frequency system oscillation.</p>
-    </div>
-    <div>
-	<p>Publication Journals:</p>
-	<ul>
-	<li><a href="https://www.sciencedirect.com/science/article/pii/S1290072914002750" target="_blank">H.Y. Li, Y.F. Yap, J. Lou, J.C. Chai, Z. Shang. Numerical investigation of conjugated heat transfer in a channel with a moving depositing front. International Journal of Thermal Sciences, 88, 2015, 136-147.</a></li>	
-	<li><a href="https://www.hindawi.com/journals/fluids/2014/193215/" target="_blank">Zhi Shang, Jing Lou, Hongying Li. Numerical simulation of water jet flow using diffusion flux mixture model. Journal of Fluids, Volume 2014, Article ID 193215, 6 pages.</a></li>
-	</ul>
-	<p>Publication Conferences:</p>
-	<ul>
-	<li>Zhi Shang, Jun Zhao, Shuo Chen. Instability research of two phase flow using fractal image coding. Transactions of the American Nuclear Society, v 94, Transactions of the American Nuclear Society 2006 Annual Meeting and Embedded Topical Meeting - Nuclear Fuels and Structural Materials for the Next Generation Nuclear Reactors, June 4 - 8, 2006, Reno, NV, USA, pp.506-507.(<font color="blue">article</font>)</li>
-	</ul>
-    </div>
-    
-    <h2 >Project: Growth of small disturbances in supersonic boundary layer</h2>
-    <img style="width: 250px; height: 200px;" src="/research/img/mach6a.png">
-    <img style="width: 250px; height: 200px;" src="/research/img/mach6b.gif">
-    <div itemscope="" itemtype="http://data-vocabulary.org/Person" class="col-sm-5">
-	<p >The in-house DNS code was developed using Fortran90.</p>
-	<p >The MPI was used to parallelize the code.</p>
-	<p >In the animation, the Mach number is 6 and Re = 20000.</p>
-    </div> 
-    <div>
-	<p>Publication Conferences:</p>
-	<ul>
-	<li><a href="https://arc.aiaa.org/doi/10.2514/6.2009-566" target="_blank">Yufeng Yao, Zhi Shang, Jony Castagna, Neil D Sandham, Roderick Johnstone, Richard D Sandberg, Victoria Suponitsky, John A Redford, Lloyd E Jones, Nicola De Tullio. Re-engineering a DNS code for high-performance computation of turbulent flows. 47th AIAA Aerospace Sciences Meeting, January 5 - 8, 2009, Orlando World Center Marriott, Orlando, Florida, USA. Paper No.566 (<font color="blue">presentation + article</font>)</a></li>
-	<li>Zhi Shang, Yufeng Yao. Some updates of software engineering project on DNS code development. UK Turbulence Consortium Workshop, Beaulieu Hotel, New Forest, Hampshire, 01 - 02 September, 2008, Southampton, UK. (<font color="blue">presentation</font>)</li>
-	</ul>
-    </div>
-    
-    <h2 >Project: Heat transfer of super critical water </h2>
-    <img style="width: 350px; height: 250px;" src="/research/img/swphy.png"> &emsp; &emsp; &emsp; &emsp; &emsp;
-    <img style="width: 350px; height: 250px;" src="/research/img/swsim.png">
-    <img style="width: 250px; height: 250px;" src="/research/img/swcyl.png">
-    <img style="width: 250px; height: 250px;" src="/research/img/swnuc.png">
-    <div itemscope="" itemtype="http://data-vocabulary.org/Person" class="col-sm-5">
-	<p >The user subroutine was developed for physical properties of super critical water using Fortran in STAR-CD.</p>
-	<p >This user subroutine is able to handle the heat transfer with large change of fluid physical properties.</p>
-	<p >The pictures show the heat transfer component and the entire SCWR (supercritical water reactor).</p>
-    </div>   
-    <div>
-	<p>Publication Journals:</p>
-	<ul>
-	<li><a href="https://www.sciencedirect.com/science/article/pii/S0029549310006187" target="_blank">Zhi Shang, Simon Lo. CFD in supercritical water-cooled nuclear reactor (SCWR) with horizontal tube bundles. Nuclear Engineering and Design, 241(11), 2011, 4427-4433.</a></li>
-	<li><a href="https://www.sciencedirect.com/science/article/pii/S1359431110004473" target="_blank">Zhi Shang, Shuo Chen. Numerical investigation of diameter effect on heat transfer of supercritical water flows in horizontal round tubes. Applied Thermal Engineering, 31(4), 2011, 573-581.</a></li>
-	<li><a href="https://www.sciencedirect.com/science/article/pii/S0029549310001627" target="_blank">Junli Gou, Zhi Shang, Yuki Ishiwarari, Yoshiaki Oka, Masanori Yamakawa, Satoshi Ikejiri. CFD analysis of heat transfer in subchannels of a super fast reactor. Nuclear Engineering and Design, 240(7), 2010, 1819-1829.</a></li>
-	<li><a href="https://www.sciencedirect.com/science/article/pii/S0029549309005615?via%3Dihub" target="_blank">Zhi Shang, Simon Lo. Numerical investigation of supercritical water-cooled nuclear reactor in horizontal tube bundles. Nuclear Engineering and Design, 240(4), 2010, 776-782.</a></li>
-	<li><a href="https://www.sciencedirect.com/science/article/pii/S0029549309003501" target="_blank">Zhi Shang. CFD investigation of vertical rod bundles of supercritical water-cooled nuclear reactor. Nuclear Engineering and Design, 232(2), 2009, 157-163.</a></li>
-	<li><a href="https://www.sciencedirect.com/science/article/pii/S0009250908003060" target="_blank">Zhi Shang, Yufeng Yao, Shuo Chen. Numerical investigation of pressure effect on heat transfer of supercritical water flows in a horizontal round tube. Chemical Engineering Science, 63(16), 2008, 4150-4158.</a></li>
-	<li><a href="https://www.tandfonline.com/doi/abs/10.1080/18811248.2008.9711423" target="_blank">Liangzhi CAO, Yoshiaka OKA, Yuki ISHIWATARI, Zhi SHANG. Fuel, core design and subchannel analysis of a superfast reactor. Journal of Nuclear Science and Technology, 45(2), 2008, 138-148.</a></li>
-	</ul>	    
-	<p>Publication Conferences:</p>
-	<ul>
-	<li><a href="https://inis.iaea.org/search/search.aspx?orig_q=RN:41133773" target="_blank">Zhi Shang, Charles Moulinec, David R. Emerson, Xiaojun Gu. Investigation of flow and heat transfer of fuel Assembly in Supercritical Water Nuclear Reactor. Technical Meeting on Heat transfer, Thermal-hydraulics and system design for supercritical water cooled reactors, July 5 - 8, 2010, University of Pisa, Pisa, Italy.(<font color="blue">presentation+article</font>)</a></li>
-	<li><a href="https://inis.iaea.org/search/search.aspx?orig_q=RN:43105853" target="_blank">Zhi Shang, Simon Lo. CFD in supercritical water-cooled nuclear reactor (SCWR) with horizontal tube bundles. 13th International Topical Meeting on Nuclear Reactor Thermal Hydraulics (NURETH-13), September 27 - October 2, 2009. Kanazawa, Japan. Paper No. N13P1043(<font color="blue">presentation+article</font>)</a></li>
-	<li>Zhi Shang. Numerical simulation of heat transfer in rod bundles of supercritical water-cooled nuclear reactor (SCWR). 4th International Symposium on Supercritical Water-Cooled Reactors, March 8-11, 2009, Heidelberg, Germany. Paper No.32(<font color="blue">article</font>)</li>
-	<li><a href="http://proceedings.asmedigitalcollection.asme.org/proceeding.aspx?articleid=1631529" target="_blank">Zhi Shang, Yufeng Yao. CFD investigation of heat transfer in supercritical water-cooled flow through 3×3 fuel rod bundles. Proceedings of the 16th International Conference on Nuclear Engineering (ICONE16), May 11 - 15, 2008, Orlando, Florida, USA, ICONE16-84055.(<font color="blue">presentation+article</font>)</a></li>
-	<li>Zhi Shang, Yufeng Yao, Simon Lo. Heat transfer of supercritical water-cooled flow in horizontal tube bundles. STAR European Conference 2008, March 17 - 18 2008, NOVOTEL, London, UK, Invited Presentation, 18 March 10:10-10:35.(<font color="blue">presentation</font>)</li>
-	</ul>
-    </div>
-    
-    <h2 >Project: Super cavitation around a submarine</h2>
-    <img style="width: 250px; height: 200px;" src="/research/img/submesh.png">
-    <img style="width: 250px; height: 200px;" src="/research/img/subcavn.gif">
-    <div itemscope="" itemtype="http://data-vocabulary.org/Person" class="col-sm-5">
-	<p >The interPhaseChangeFoam solver in OpenFOAM was used.</p>
-	<p >ICEM-CFD was used to generate the mesh due to high mesh quality requirements from cavitation phase change simulations.</p>
-	<p >The pictures show the super cavitation growth around the submarine at the cavitation number = 0.1.</p>
-    </div>
-    <br> </br>
-    <div>
-	<p>Publication Journals:</p>
-	<ul>
-	<li><a href="https://www.sciencedirect.com/science/article/pii/S0307904X13002576" target="_blank">Zhi Shang. Numerical investigations of supercavitation around blunt bodies of submarine shape. Applied Mathematical Modelling, 37 (20-21), 2013, 8836-8845.</a></li>
-	<li><a href="https://www.worldscientific.com/doi/abs/10.1142/S0219876212500405?journalCode=ijcm" target="_blank">Zhi Shang, David R. Emerson, Xiaojun Gu. Numerical investigations of cavitation around a high speed submarine using OpenFOAM with LES. International Journal of Computational Methods, 9(3), 2012, Article ID 1250040, 14 pages.</a></li>
-	<!--<li><a href="" target="_blank"> </a></li>-->	
-	</ul>	    
-	<p>Publication Conferences:</p>
-	<ul>
-	<li><a href="http://rpsonline.com.sg/proceedings/9789810728267/html/047.xml" target="_blank">Zhi Shang. A CFD investigation of cavitation around a submarine under water. Proceedings of the 8th International Symposium on Cavitation (CAV2012), 14 - 16 August 2012, Singapore.(<font color="blue">presentation + article</font>)</a></li>	
-	</ul>
-    </div>
-
-    <h2 >Project: Multiphase flow modeling</h2>
-    <img style="width: 250px; height: 200px;" src="/research/img/hbubble.png">
-    <img style="width: 250px; height: 200px;" src="/research/img/hbubbles.png">
-    <div itemscope="" itemtype="http://data-vocabulary.org/Person" class="col-sm-5">
-	<p >The UDF (user defined function) was developed using C for FLUENT.</p>
-	<p >The UDF (user defined function) was coded for the novel Lagrangian algebraic slip mixture model (LASMM).</p>
-	<p >The pictures show the bubble in a horizotal tube and comparison with experiment and simulations of CFX (two fluid model) and FLUENT (ASMM).</p>
-    </div>
-    <br> </br>
-    <div>
-	<p>Publication Journals:</p>
-	<ul>
-	<li><a href="https://www.sciencedirect.com/science/article/pii/S0032591016306271" target="_blank">Zhi Shang. A new centrifugal correction drag force model for gas solid-particle two-phase flow. Powder Technology, 303, 2016, 124-129.</a></li>
-	<li><a href="https://www.sciencedirect.com/science/article/pii/S0307904X15003637" target="_blank">Zhi Shang, Jing Lou, Hongying Li. A multi-dimensional Lagrangian algebraic slip mixture model for bubble column reactors. Applied Mathematical Modelling, 41(1), 2016, 208-217.</a></li>
-	<li><a href="https://www.worldscientific.com/doi/abs/10.1142/S0219876215400010" target="_blank">Zhi Shang, Jing Lou, Hongying Li. A new multidimensional drift flux mixture model for gas-liquid droplet two-phase flow. International Journal of Computational Methods, 12(4), 2015, Article ID 1540001, 12 pages.</a></li>
-	<li><a href="https://www.sciencedirect.com/science/article/pii/S0029549315001259" target="_blank">Zhi Shang. A novel drag force coefficient model for gas-water two-phase flows under different flow patterns. Nuclear Engineering and Design, 288, 2015, 208-219.</a></li>
-	<li><a href="https://www.sciencedirect.com/science/article/pii/S0301932215000713" target="_blank">Zhi Shang, Jing Lou, Hongying Li. CFD analysis of bubble column reactor under gas-oil-water-solid four-phase flows using Lagrangian algebraic slip mixture model. International Journal of Multiphase Flow, 73, 2015, 142-154.</a></li>
-	<li><a href="https://www.sciencedirect.com/science/article/pii/S0032591014005713" target="_blank">Zhi Shang, Jing Lou, Hongying Li. CFD of dilute gas-solid two-phase flow using Lagrangian algebraic slip mixture model. Powder Technology, 266, 2014, 120-128.</a></li>
-	<li><a href="https://www.sciencedirect.com/science/article/pii/S0009250913005605" target="_blank">Zhi Shang, Jing Lou, Hongying Li. A novel Lagrangian algebraic slip mixture model for two-phase flow in horizontal pipe. Chemical Engineering Science, 102, 2013, 315-323.</a></li>
-	</ul>	    
-	<p>Publication Conferences:</p>
-	<ul>
-	<li><a href="http://www.sci-en-tech.com/apcom2013/APCOM2013-Proceedings/PDF_FullPaper/1662_zhishang.pdf" target="_blank">Zhi Shang, Hongying Li, Jing Lou. A multi-dimensional drift flux mixture model for gas-droplet two-phase flow. 5TH ASIA PACIFIC CONGRESS ON COMPUTATIONAL MECHANICS & 4TH INTERNATIONAL SYMPOSIUM ON COMPUTATIONAL MECHANICS (APCOM2013 and ISCM 2013), 11 - 14 December 2013, Singapore.(<font color="blue">presentation + article</font>)</a></li>	
-	<li><a href="https://meetings.aps.org/Meeting/DFD13/Session/A3.5" target="_blank">Zhi Shang, Jing Lou, Hongying Li. A new drag force model based on drift flux for gas-particle two-phase flow. American Physical Society, Division of Fluid Dynamics 66 th Annual Meeting, Pittsburgh, Pennsylvania, November 24 - 26, 2013, USA.(<font color="blue">presentation</font>)</a></li>
-	<!--<li><a href="" target="_blank"> </a></li>-->
-	</ul>
-    </div>
-    
-    <h2 >Project: CFD on large scale simulations with mesh generations for complex geometries</h2>
-    <img style="width: 350px; height: 200px;" src="/research/img/fpso.png"> &emsp; &emsp; &emsp; &emsp;
-    <img style="width: 350px; height: 200px;" src="/research/img/fpsomesh.png">
-    <img style="width: 250px; height: 210px;" src="/research/img/fpsosim1.png">
-    <img style="width: 250px; height: 210px;" src="/research/img/fpsosim2.png">
-    <div itemscope="" itemtype="http://data-vocabulary.org/Person" class="col-sm-5">
-	<p >The geometry is in STL format.</p>
-	<p >The mesh was generated using snappyHexMesh in OpenFOAM.</p>
-	<p >The pictures show the exhaust gas released from the chimneys on FPSO (floating production storage and offloading) simulated by FLUENT using the mesh generated by OpenFOAM and post-processed by Ensight.</p>
-    </div>
-    <br> </br>
-    <div>
-	<p>Publication Journals:</p>
-	<ul>
-	<li><a href="https://www.sciencedirect.com/science/article/pii/S0045793014003016" target="_blank">Zhi Shang. Impact of mesh partitioning methods in CFD for large scale parallel computing. Computers and Fluids, 103, 2014, 1-5.</a></li>
-	<li><a href="https://www.hindawi.com/journals/je/2013/850148/" target="_blank">Zhi Shang. Large scale CFD parallel computing dealing with massive mesh. Journal of Engineering, Volume 2013, Article ID 850148, 6 pages.</a></li>
-	<li><a href="https://www.sciencedirect.com/science/article/pii/S001046551200313X" target="_blank">Zhi Shang. Performance analysis of large scale parallel CFD computing based on Code_Saturne. Computer Physics Communications, 184(2), 2013, 381-386.</a></li>	
-	<li><a href="https://www.sciencedirect.com/science/article/pii/S0045793011000351" target="_blank">Y. Fournier, J. Bonelle, C. Moulinec, Z. Shang, A. Sunderland, J. Uribe. Optimizing Code Saturne computations on Petascale systems. Computers & Fluids, 45(1), 2011, 103-108.</a></li>
-	</ul>	    
-	<p>Publication Conferences:</p>
-	<ul>
-	<li>Y. Fournier, J. Bonelle, C. Moulinec, Z. Shang, A. Sunderland, J. Uribe. Developing Code_Saturne for computing at the Petascale. 22nd International Conference on Parallel Computational Fluid Dynamics, May 17 - 21, 2010, Kaohsiung, Taiwan.(<font color="blue">presentation + article</font>)</li>
-	</ul>
-    </div>
-    
-    <h2 >Project: LBM for multiphase flow</h2>
-    <img style="width: 350px; height: 200px;" src="/research/img/lbmdrop.gif">&emsp; &emsp; &emsp; &emsp;
-    <img style="width: 350px; height: 200px;" src="/research/img/lbmpara.gif">
-    <img style="width: 350px; height: 250px;" src="/research/img/lbmspeed.png">
-    <div itemscope="" itemtype="http://data-vocabulary.org/Person" class="col-sm-5">
-	<p >The in-house code was developed using Fortran90.</p>
-	<p >The MPI was used to parallize the LBM code.</p>
-	<p >The mesh size is 1024*1024*1024 above 1 billion.</p>
-    </div>
-    <div>
-	<p>Publication Journals:</p>
-	<ul>
-	<li><a href="http://www.ikprress.org/index.php/AJOMCOR/article/view/273" target="_blank">Zhi Shang, Baili Zhang, Ming Cheng, Jing Lou, Xiaodong Niu. Parallelization of 3D immersed boundary lattice Boltzmann method for large scale solid particle suspension flow using MPI and OpenMP. Asian Journal of Mathematics and Computer Research, 10(2), 2016, 165-178.</a></li>
-	<li><a href="https://www.worldscientific.com/doi/abs/10.1142/S1793962313500244" target="_blank">Zhi Shang, Ming Cheng, Jing Lou. Parallelization of lattice Boltzmann method for a drop impact on a wetted solid wall. International Journal of Modeling, Simulation, and Scientific Computing, 5(2), 2014, Article ID 1350024, 13pages.</a></li>
-	<!--<li><a href="" target="_blank"> </a></li>-->	
-	</ul>	    
-	<p>Publication Conferences:</p>
-	<ul>
-	<li><a href="http://adsabs.harvard.edu/abs/2014APS..DFDL31007Z" target="_blank">Baili Zhang, Ming Cheng, Zhi Shang, Jing Lou. An Immersed Boundary-Lattice Boltzmann Approach to the Direct Numerical Simulation of Complex Particulate Flows. American Physical Society, Division of Fluid Dynamics 67th Annual Meeting, San Francisco, California, November 23 - 25, 2014, USA. (<font color="blue">presentation</font>)</a></li>	
-	<li>Zhi Shang, Yufeng Yao. Lattice Boltzmann large-eddy simulation of turbulent cavity flow. The Fifth International Conference for Mesoscopic Methods in Engineering and Science (ICMMES), June 16 - 20, 2008, Amsterdam,Netherlands. (<font color="blue">presentation</font>)</li>
-	</ul>
-    </div>
-
-    <h2 >Project: hurricane simulation and forecasting</h2>
-    <img style="width: 300px; height: 400px;" src="/research/img/Katrina.gif">
-    <div itemscope="" itemtype="http://data-vocabulary.org/Person" class="col-sm-5">
-	<p >The solver was developed under MPI parallel computing.</p>
-	<p >The coupler was employed to couple atmosphere, land and ocean models based on MCT (Modeling Coupling Toolkit) for dealing with couplig of multiple grids, multiple physics and multiple processors.</p>
-	<p >In the animation, the hurricane Katrina, which emerged and developed into the Gulf of Mexico from August 27, 2005 to August 30, 2005, was simulated. The life track was fully numerically reproduced. The storm growing from a Category 3 hurricane to a Category 5 hurricane was also captured by the simulation after entering the Gulf of Mexico.</p>
-    </div>
-	
-</div> <!-- /container -->
-	
+<!DOCTYPE html>
+<html lang="en">	
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" width="device-width, initial-scale=1.0">
+    <meta name="description" content="research page.">
+    <meta name="author" content="Zhi Shang">
+    <title>Research | Zhi Shang</title>		
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../css/jumbotron-narrow.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>	
+<body>
+	<div class="container">			
+		<div class="header">
+			<ul class="nav nav-pills pull-right">
+				<li class="active"><a href="../research" title="Research">Research</a></li>
+				<li class="passive"><a href="../cv" title="CV">CV</a></li>
+				<li class="passive"><a href="../contact" title="Contact">Contact</a></li>
+			</ul>
+			<h3 class="text-muted passive"><a href="../">Zhi Shang</a></h3>
+		</div> <!-- /header -->	
+		<div class="inline_block">
+			<h2 >Project: Water agitation in a closed tank</h2>
+			<img style="width: 250px; height: 300px;" src="img/rotationc.gif">
+			<img style="width: 250px; height: 300px;" src="img/rotationr.gif">
+			<div class="col-sm-6">
+				<p >The overInterDyMFoam solver was used in OpenFOAM.</p>
+				<p >The Chimera (overset) grids technique was use to handle the dynamic mesh. The MULES (multidimensional universal limiter with explicit solution) algorithm was used to solve the VOF (volume of fluid) Riemann equation.</p>
+				<p >In the animation, the left is under the same direction of rotation and speed of the rotators and the right is under the opposite direction of rotation but the same speed of the rotators.</p>
+			</div>
+		</div>		
+		<hr/>
+		<div class="inline_block">
+			<h2 >Project: Multiphase flow in porous media</h2>
+			<img style="width: 200px; height: 220px;" src="img/porousmedia.gif">
+			<div class="col-sm-6">
+				<p >The multiphase flow solver was developed using C++ for OpenFOAM.</p>
+				<p >This solver is able to handle gas-oil-water-particle 4 phase flow with VOF (volume of fluid).</p>
+				<p >In the animation, the porosity is 0.3; the gas was colored by blue; water was colored by red; oil was colored by grey; solid particles were colored by particle sizes.</p>
+			</div>
+			<div>
+				<p>Publication Journals:</p>
+				<ul>
+					<li><a href="http://www.ikprress.org/index.php/AJOMCOR/articles-press" target="_blank">Zhi Shang, Honggao Liu, James A. Lupo. Evaluation of hybrid MPI-OpenMP on discrete particle modeling for large scale parallel computing with OpenFOAM. Asian Journal of Mathematics and Computer Research, available (in press).</a></li>
+				</ul>
+				<p>Publication Conferences:</p>
+				<ul>
+					<li>Zhi Shang, Honggao Liu. High Performance Computing on Multiphase Flows in Oil Reservior at Intel Xeon Phi Knights Landing Processors. Poster at Texas A&M University booth, 30 th Supercomputing Conference (SC17), Denver, Colorado, November 13 - 16, 2017, USA. (<font color="blue">poster</font>)</li>
+					<li>Zhi Shang, Honggao Liu, James A. Lupo. CFD High Performance Computing in Oil Reserviors at Intel Xeon Phis. The 2 nd Annual Texas A&M Conference on Energy, College Station, Texas, September 25-27, 2017, USA. (<font color="blue">presentation</font>)</li> 
+					<li><a href="https://dl.acm.org/citation.cfm?doid=3093338.3093350" target="_blank">Zhi Shang, Honggao Liu. Simulating Multiphase Flows in Porous Media Using OpenFOAM on Intel Xeon Phi Knights Landing Processors. Practice & Experience in Advanced Research Computing (PEARC17), New Orleans, Louisiana, July 9 - 13, 2017, USA. (<font color="blue">presentation + article</font>)</a></li> 
+					<li>Zhi Shang, Honggao Liu. High Performance Computing of Multiphase Flow in Porous Media Network using OpenFOAM. Texas A&M Research Computing Week, College Station, Texas, June 5 - 9, 2017, USA (<font color="blue">poster</font>)</li>
+					<li>Zhi Shang, Honggao Liu. High Performance Computing at Intel Xeon Phi Knights Landing Cluster with OpenFOAM. Poster at Texas A&M University booth, 29 th Supercomputing Conference (SC16), Salt Lake City, Utah, November 13 - 18, 2016, USA. (<font color="blue">poster</font>)</li> 
+					<li>Zhi Shang, Mayank Tyagi, James A. Lupo, Honggao Liu, Krishnaswamy Nandakumar, Karsten Thompson. Large Scale CFD Simulations of Particulate Flows in Porous Media. Poster at Louisiana State University booth, 27th Supercomputing Conference (SC15), Austin, Texas, November 15 - 20, 2015, USA. (<font color="blue">poster</font>)</li> 
+					<li><a href="https://meetings.aps.org/Meeting/DFD15/Session/M7.8" target="_blank">Zhi Shang, Honggao Liu, Krishnaswamy Nandakumar, Mayank Tyagi, James A. Lupo, Karsten Thompson. Discrete Particle Model for Porous Media Flow using OpenFOAM at Intel Xeon Phi Coprocessor. American Physical Society, Division of Fluid Dynamics 68th Annual Meeting, Boston, Massachusetts, November 22 - 24, 2015, USA. (<font color="blue">presentation</font>)</a></li>
+					<li><a href="http://www.hpcsociety.org/seg2015abstracts#cole" target="_blank">Zhi Shang. High Performance Computing at Intel Xeon Phi Coprocessor for Discrete Particle Model of OpenFOAM. Presentation at HPC theater, Society of Exploration Geophysicists (SEG), International Explosion and 85th Annual Meeting, New Orleans, Louisiana, October 18 - 23, 2015, USA. (<font color="blue">presentation</font>)</a></li>
+					<li>Zhi Shang, Honggao Liu, Krishnaswamy Nandakumar, Mayank Tyagi, James A. Lupo, Karsten Thompson. High Performance Computing at Intel Xeon Phi Coprocessor Using Native and Symmetric Modes for Discrete Particle Model of OpenFOAM. 3 rd Annual EPIC Workshop on Enabling Process Innovation through Computation, Louisiana State University, Baton Rouge, Louisiana, May 1, 2015, USA. (<font color="blue">poster</font>)</li>
+				</ul>
+				<p>Publication Books:</p>        
+				<ul>
+					<li><a href="https://www.lap-publishing.com/catalog/details//store/gb/book/978-3-659-80852-4/high-performance-computing-of-multiphase-flows-in-porous-media" target="_blank">Zhi Shang, Honggao Liu, James A. Lupo. High Performance Computing of Multiphase Flows in Porous Media - Using OpenFOAM and the Intel Xeon Phi. Lambert Academic Publishing, OmniScriptum GmbH & Co. KG, Bahnhofstraße 28, 66111 Saarbrücken, Germany, 2017.</a></li> 
+					<!--<li><a href="" target="_blank"> </a></li>-->
+				</ul>
+			</div>
+		</div>
+		<hr/>
+		<div class="inline_block">
+			<h2 >Project: Multiphase flow in FSI (fluid structure interaction)</h2>
+			<img style="width: 220px; height: 220px;" src="img/propellervof.gif">
+			<img style="width: 220px; height: 220px;" src="img/propellerpar.gif">
+			<div class="col-sm-6">
+				<p >The multiphase flow solver was developed using C++ for OpenFOAM.</p>
+				<p >This solver is able to handle gas-oil-water-particle 4 phase flow with VOF (volume of fluid).</p>
+				<p >In the animation, the propellor rotates with 158 rad/s; the left is gas-oil-water without particles; the right is gas-oil-water-particle with solid particles.</p>
+			</div> 
+		</div>
+		<hr/>
+		<div class="inline_block">
+			<h2 >Project: Particle transport in shale fracture</h2>
+			<!--<img style="width: 350px; height: 200px;" src="/research/img/shalegeo.png">-->
+			<img style="width: 250px; height: 200px;" src="img/shalemesh.png"> 
+			<!--<img style="width: 200px; height: 250px;" src="img/shalepar.png">-->
+			<img style="width: 250px; height: 300px;" src="img/shaleani.gif"> 
+			<div class="col-sm-6">
+				<p >The MPPICFoam solver was used in OpenFOAM.</p>
+				<p >The simulation for 3600 seconds (1 hour) is under 8 processors done in 1 day with DPM (discrete particle model) under MP-PIC (multiphase particle in cell) techneque.</p>
+				<p >In the animation, the sand particles with everage 300&microm normal distribution (100&microm; - 500&microm;) inject into the shale fold fracture with 584.8 ft long, 98.4 ft height and 0.3 in width. Proppant density is 1000 kg/m<sup>3</sup> and sand particle density is 2650 kg/m<sup>3</sup>. The flow rate is 40 bpm with sand concentration 2.5 lb/gal.</p>
+			</div>
+			<br/> 	  
+			<div>
+				<p>Publication Conferences:</p>
+				<ul>
+					<li><a href="https://www.abstractsonline.com/pp8/#!/7868/presentation/2007" target="_blank">Shaowen Mao, Zhi Shang, Seunghwan Chun, Jiawei Li, Kan Wu. An efficient three-dimensional multiphase particle-in-cell model for proppant transport in the field scale. 2019 URTeC, Denver, Colorado | Colorado Convention Center, 22-24 July 2019 (URTeC: 462).(<font color="blue">presentation+article</font>)</a></li>
+				</ul>
+				<p>Media reports:</p>
+				<ul>
+					<li><a href="https://www.rdworldonline.com/transforming-raw-oil-and-gas-reservoir-data-into-actionable-insights/" target="_blank">Linda Barney. Transforming Raw Oil and Gas Reservoir Data into Actionable Insights. Wed, 10/21/2015 - 10:45am</a></li>
+				</ul>
+			</div>
+		</div>
+		<hr/>
+		<div class="inline_block">
+			<h2 >Project: Dam break</h2>
+			<img style="width: 250px; height: 200px;" src="img/velocity.gif">
+			<img style="width: 250px; height: 200px;" src="img/waterdepth.gif">
+			<div class="col-sm-6">
+				<p >The solver was optimized by hybrid MPI/OpenMP programming for Telemac.</p>
+				<p >This solver is able to handle the shallow water simulation.</p>
+				<p >In the animation, the water washed down from the dam break to the sea through a river in the mountain and a coastal city over 100 kilometers on the journey.</p>
+			</div> 
+			<div>
+				<p>Publication Journals:</p>
+				<ul>
+					<li><a href="https://www.worldscientific.com/doi/abs/10.1142/S1793962314720015" target="_blank">Zhi Shang. High performance computing for flood simulation using Telemac based on hybrid MPI/OpenMP parallel programming. International Journal of Modeling, Simulation, and Scientific Computing, 5(4), 2014, Article ID 1472001, 13 pages.</a></li>
+				</ul>
+				<p>Publication Conferences:</p>
+				<ul>
+					<li><a href="http://www.hector.ac.uk/cse/distributedcse/reports/telemac/" target="_blank">Zhi Shang. Developing the TELEMAC system for HEVToR (phase 2b & beyond). HECToR Distributed CSE Support Technical Meeting, 4 - 5 October 2011, Manchester, UK. (<font color="blue">presentation</font>)</a></li>
+				</ul>
+			</div>
+		</div>
+		<hr/>
+		<div class="inline_block">
+			<h2 >Project: Faraday wave resonance</h2>
+			<img style="width: 250px; height: 200px;" src="img/slosh.gif">
+			<img style="width: 250px; height: 200px;" src="img/faraday.png">
+			<div class="col-sm-6">
+				<p >The VOF solver was developed using C++ for OpenFOAM.</p>
+				<p >This solver is able to handle the system ossillation.</p>
+				<p >In the animation, the gravity was revised by G=(-g+a*cos(omg*t))e<sub>z</sub>.</p>
+			</div>   
+			<div>
+				<p>Publication Journals:</p>
+				<ul>
+					<li><a href="https://www.sciencedirect.com/science/article/pii/S0017931017317933" target="_blank">Y.F. Yap, H.Y. Li, J. Lou, L.S. Pan, Z. Shang.Numerical modeling of three-phase flow with phase change using the level-set method. International Journal of Heat and Mass Transfer, 115, 2017, 730-740.</a></li>
+					<li><a href="https://www.worldscientific.com/doi/abs/10.1142/S021987621750013X" target="_blank">Zhi Shang, Jing Lou, Hongying Li. Simulations of flow transitions in a vertical pipe using coupled level set and VOF method. International Journal of Computational Methods, 14(2), 2017, Article ID 1750013, 17 pages.</a></li>
+				</ul>
+				<p>Publication Conferences:</p>
+				<ul>
+					<li><a href="http://meetings.aps.org/Meeting/DFD14/Session/L33.1" target="_blank">Hongying Li, Jing Lou, Zhi Shang. Numerical Modelling of Three-Fluid Flow Using The Level-set Method. American Physical Society, Division of Fluid Dynamics 67 th Annual Meeting, San Francisco, California, November 23 - 25, 2014, USA.(<font color="blue">presentation</font>)</a></li>
+				</ul>
+			</div>
+		</div>
+		<hr/>
+		<div class="inline_block">
+			<h2 >Project: Oscillation wave of free surface at low and high frequency system oscillation </h2>
+			<img style="width: 250px; height: 200px;" src="img/flatBottom.gif">
+			<img style="width: 250px; height: 200px;" src="img/ossilation.gif">
+			<div class="col-sm-6">
+				<p >The VOF solver was developed using C++ for OpenFOAM.</p>
+				<p >This solver is able to handle the free surface ossillation.</p>
+				<p >In the animation, the left is at low frequent system oscillation and right is at high frequency system oscillation.</p>
+			</div>
+			<div>
+				<p>Publication Journals:</p>
+				<ul>
+					<li><a href="https://www.sciencedirect.com/science/article/pii/S1290072914002750" target="_blank">H.Y. Li, Y.F. Yap, J. Lou, J.C. Chai, Z. Shang. Numerical investigation of conjugated heat transfer in a channel with a moving depositing front. International Journal of Thermal Sciences, 88, 2015, 136-147.</a></li>	
+					<li><a href="https://www.hindawi.com/journals/fluids/2014/193215/" target="_blank">Zhi Shang, Jing Lou, Hongying Li. Numerical simulation of water jet flow using diffusion flux mixture model. Journal of Fluids, Volume 2014, Article ID 193215, 6 pages.</a></li>
+				</ul>
+				<p>Publication Conferences:</p>
+				<ul>
+					<li>Zhi Shang, Jun Zhao, Shuo Chen. Instability research of two phase flow using fractal image coding. Transactions of the American Nuclear Society, v 94, Transactions of the American Nuclear Society 2006 Annual Meeting and Embedded Topical Meeting - Nuclear Fuels and Structural Materials for the Next Generation Nuclear Reactors, June 4 - 8, 2006, Reno, NV, USA, pp.506-507.(<font color="blue">article</font>)</li>
+				</ul>
+			</div>
+		</div>
+		<hr/>
+		<div class="inline_block">
+			<h2 >Project: Growth of small disturbances in supersonic boundary layer</h2>
+			<img style="width: 250px; height: 200px;" src="img/mach6a.png">
+			<img style="width: 250px; height: 200px;" src="img/mach6b.gif">
+			<div class="col-sm-6">
+				<p >The in-house DNS code was developed using Fortran90.</p>
+				<p >The MPI was used to parallelize the code.</p>
+				<p >In the animation, the Mach number is 6 and Re = 20000.</p>
+			</div> 
+			<div>
+				<p>Publication Conferences:</p>
+				<ul>
+					<li><a href="https://arc.aiaa.org/doi/10.2514/6.2009-566" target="_blank">Yufeng Yao, Zhi Shang, Jony Castagna, Neil D Sandham, Roderick Johnstone, Richard D Sandberg, Victoria Suponitsky, John A Redford, Lloyd E Jones, Nicola De Tullio. Re-engineering a DNS code for high-performance computation of turbulent flows. 47th AIAA Aerospace Sciences Meeting, January 5 - 8, 2009, Orlando World Center Marriott, Orlando, Florida, USA. Paper No.566 (<font color="blue">presentation + article</font>)</a></li>
+					<li>Zhi Shang, Yufeng Yao. Some updates of software engineering project on DNS code development. UK Turbulence Consortium Workshop, Beaulieu Hotel, New Forest, Hampshire, 01 - 02 September, 2008, Southampton, UK. (<font color="blue">presentation</font>)</li>
+				</ul>
+			</div>
+		</div>
+		<hr/>
+		<div class="inline_block">
+			<h2 >Project: Heat transfer of super critical water </h2>
+			<img style="width: 350px; height: 250px;" src="img/swphy.png"> &emsp; &emsp;
+			<img style="width: 350px; height: 250px;" src="img/swsim.png"> &emsp; &emsp;
+			<img style="width: 250px; height: 250px;" src="img/swcyl.png">
+			<img style="width: 350px; height: 200px;" src="img/swnuc.png">
+			<div class="col-sm-6">
+				<p >The user subroutine was developed for physical properties of super critical water using Fortran in STAR-CD.</p>
+				<p >This user subroutine is able to handle the heat transfer with large change of fluid physical properties.</p>
+				<p >The pictures show the heat transfer component and the entire SCWR (supercritical water reactor).</p>
+			</div>   
+			<div>
+				<p>Publication Journals:</p>
+				<ul>
+					<li><a href="https://www.sciencedirect.com/science/article/pii/S0029549310006187" target="_blank">Zhi Shang, Simon Lo. CFD in supercritical water-cooled nuclear reactor (SCWR) with horizontal tube bundles. Nuclear Engineering and Design, 241(11), 2011, 4427-4433.</a></li>
+					<li><a href="https://www.sciencedirect.com/science/article/pii/S1359431110004473" target="_blank">Zhi Shang, Shuo Chen. Numerical investigation of diameter effect on heat transfer of supercritical water flows in horizontal round tubes. Applied Thermal Engineering, 31(4), 2011, 573-581.</a></li>
+					<li><a href="https://www.sciencedirect.com/science/article/pii/S0029549310001627" target="_blank">Junli Gou, Zhi Shang, Yuki Ishiwarari, Yoshiaki Oka, Masanori Yamakawa, Satoshi Ikejiri. CFD analysis of heat transfer in subchannels of a super fast reactor. Nuclear Engineering and Design, 240(7), 2010, 1819-1829.</a></li>
+					<li><a href="https://www.sciencedirect.com/science/article/pii/S0029549309005615?via%3Dihub" target="_blank">Zhi Shang, Simon Lo. Numerical investigation of supercritical water-cooled nuclear reactor in horizontal tube bundles. Nuclear Engineering and Design, 240(4), 2010, 776-782.</a></li>
+					<li><a href="https://www.sciencedirect.com/science/article/pii/S0029549309003501" target="_blank">Zhi Shang. CFD investigation of vertical rod bundles of supercritical water-cooled nuclear reactor. Nuclear Engineering and Design, 232(2), 2009, 157-163.</a></li>
+					<li><a href="https://www.sciencedirect.com/science/article/pii/S0009250908003060" target="_blank">Zhi Shang, Yufeng Yao, Shuo Chen. Numerical investigation of pressure effect on heat transfer of supercritical water flows in a horizontal round tube. Chemical Engineering Science, 63(16), 2008, 4150-4158.</a></li>
+					<li><a href="https://www.tandfonline.com/doi/abs/10.1080/18811248.2008.9711423" target="_blank">Liangzhi CAO, Yoshiaka OKA, Yuki ISHIWATARI, Zhi SHANG. Fuel, core design and subchannel analysis of a superfast reactor. Journal of Nuclear Science and Technology, 45(2), 2008, 138-148.</a></li>
+				</ul>	    
+				<p>Publication Conferences:</p>
+				<ul>
+					<li><a href="https://inis.iaea.org/search/search.aspx?orig_q=RN:41133773" target="_blank">Zhi Shang, Charles Moulinec, David R. Emerson, Xiaojun Gu. Investigation of flow and heat transfer of fuel Assembly in Supercritical Water Nuclear Reactor. Technical Meeting on Heat transfer, Thermal-hydraulics and system design for supercritical water cooled reactors, July 5 - 8, 2010, University of Pisa, Pisa, Italy.(<font color="blue">presentation+article</font>)</a></li>
+					<li><a href="https://inis.iaea.org/search/search.aspx?orig_q=RN:43105853" target="_blank">Zhi Shang, Simon Lo. CFD in supercritical water-cooled nuclear reactor (SCWR) with horizontal tube bundles. 13th International Topical Meeting on Nuclear Reactor Thermal Hydraulics (NURETH-13), September 27 - October 2, 2009. Kanazawa, Japan. Paper No. N13P1043(<font color="blue">presentation+article</font>)</a></li>
+					<li>Zhi Shang. Numerical simulation of heat transfer in rod bundles of supercritical water-cooled nuclear reactor (SCWR). 4th International Symposium on Supercritical Water-Cooled Reactors, March 8-11, 2009, Heidelberg, Germany. Paper No.32(<font color="blue">article</font>)</li>
+					<li><a href="http://proceedings.asmedigitalcollection.asme.org/proceeding.aspx?articleid=1631529" target="_blank">Zhi Shang, Yufeng Yao. CFD investigation of heat transfer in supercritical water-cooled flow through 3×3 fuel rod bundles. Proceedings of the 16th International Conference on Nuclear Engineering (ICONE16), May 11 - 15, 2008, Orlando, Florida, USA, ICONE16-84055.(<font color="blue">presentation+article</font>)</a></li>
+					<li>Zhi Shang, Yufeng Yao, Simon Lo. Heat transfer of supercritical water-cooled flow in horizontal tube bundles. STAR European Conference 2008, March 17 - 18 2008, NOVOTEL, London, UK, Invited Presentation, 18 March 10:10-10:35.(<font color="blue">presentation</font>)</li>
+				</ul>
+			</div>
+		</div>
+		<hr/>
+		<div class="inline_block">
+			<h2 >Project: Super cavitation around a submarine</h2>
+			<img style="width: 250px; height: 200px;" src="img/submesh.png">
+			<img style="width: 250px; height: 200px;" src="img/subcavn.gif">
+			<div class="col-sm-6">
+				<p >The interPhaseChangeFoam solver in OpenFOAM was used.</p>
+				<p >ICEM-CFD was used to generate the mesh due to high mesh quality requirements from cavitation phase change simulations.</p>
+				<p >The pictures show the super cavitation growth around the submarine at the cavitation number = 0.1.</p>
+			</div>
+			<div>
+				<p>Publication Journals:</p>
+				<ul>
+					<li><a href="https://www.sciencedirect.com/science/article/pii/S0307904X13002576" target="_blank">Zhi Shang. Numerical investigations of supercavitation around blunt bodies of submarine shape. Applied Mathematical Modelling, 37 (20-21), 2013, 8836-8845.</a></li>
+					<li><a href="https://www.worldscientific.com/doi/abs/10.1142/S0219876212500405?journalCode=ijcm" target="_blank">Zhi Shang, David R. Emerson, Xiaojun Gu. Numerical investigations of cavitation around a high speed submarine using OpenFOAM with LES. International Journal of Computational Methods, 9(3), 2012, Article ID 1250040, 14 pages.</a></li>
+					<!--<li><a href="" target="_blank"> </a></li>-->	
+				</ul>	    
+				<p>Publication Conferences:</p>
+				<ul>
+					<li><a href="http://rpsonline.com.sg/proceedings/9789810728267/html/047.xml" target="_blank">Zhi Shang. A CFD investigation of cavitation around a submarine under water. Proceedings of the 8th International Symposium on Cavitation (CAV2012), 14 - 16 August 2012, Singapore.(<font color="blue">presentation + article</font>)</a></li>	
+				</ul>
+			</div>
+		</div>
+		<hr/>
+		<div class="inline_block">
+			<h2 >Project: Multiphase flow modeling</h2>
+			<img style="width: 250px; height: 200px;" src="img/hbubble.png">
+			<img style="width: 250px; height: 220px;" src="img/hbubbles.png">
+			<div class="col-sm-6">
+				<p>The UDF (user defined function) was developed using C for FLUENT.</p>
+				<p>The UDF (user defined function) was coded for the novel Lagrangian algebraic slip mixture model (LASMM).</p>
+				<p>The pictures show the bubble in a horizotal tube and comparison with experiment and simulations of CFX (two fluid model) and FLUENT (ASMM).</p>
+			</div>
+			<div>
+				<p>Publication Journals:</p>
+				<ul>
+					<li><a href="https://www.sciencedirect.com/science/article/pii/S0032591016306271" target="_blank">Zhi Shang. A new centrifugal correction drag force model for gas solid-particle two-phase flow. Powder Technology, 303, 2016, 124-129.</a></li>
+					<li><a href="https://www.sciencedirect.com/science/article/pii/S0307904X15003637" target="_blank">Zhi Shang, Jing Lou, Hongying Li. A multi-dimensional Lagrangian algebraic slip mixture model for bubble column reactors. Applied Mathematical Modelling, 41(1), 2016, 208-217.</a></li>
+					<li><a href="https://www.worldscientific.com/doi/abs/10.1142/S0219876215400010" target="_blank">Zhi Shang, Jing Lou, Hongying Li. A new multidimensional drift flux mixture model for gas-liquid droplet two-phase flow. International Journal of Computational Methods, 12(4), 2015, Article ID 1540001, 12 pages.</a></li>
+					<li><a href="https://www.sciencedirect.com/science/article/pii/S0029549315001259" target="_blank">Zhi Shang. A novel drag force coefficient model for gas-water two-phase flows under different flow patterns. Nuclear Engineering and Design, 288, 2015, 208-219.</a></li>
+					<li><a href="https://www.sciencedirect.com/science/article/pii/S0301932215000713" target="_blank">Zhi Shang, Jing Lou, Hongying Li. CFD analysis of bubble column reactor under gas-oil-water-solid four-phase flows using Lagrangian algebraic slip mixture model. International Journal of Multiphase Flow, 73, 2015, 142-154.</a></li>
+					<li><a href="https://www.sciencedirect.com/science/article/pii/S0032591014005713" target="_blank">Zhi Shang, Jing Lou, Hongying Li. CFD of dilute gas-solid two-phase flow using Lagrangian algebraic slip mixture model. Powder Technology, 266, 2014, 120-128.</a></li>
+					<li><a href="https://www.sciencedirect.com/science/article/pii/S0009250913005605" target="_blank">Zhi Shang, Jing Lou, Hongying Li. A novel Lagrangian algebraic slip mixture model for two-phase flow in horizontal pipe. Chemical Engineering Science, 102, 2013, 315-323.</a></li>
+				</ul>	    
+				<p>Publication Conferences:</p>
+				<ul>
+					<li><a href="http://www.sci-en-tech.com/apcom2013/APCOM2013-Proceedings/PDF_FullPaper/1662_zhishang.pdf" target="_blank">Zhi Shang, Hongying Li, Jing Lou. A multi-dimensional drift flux mixture model for gas-droplet two-phase flow. 5TH ASIA PACIFIC CONGRESS ON COMPUTATIONAL MECHANICS & 4TH INTERNATIONAL SYMPOSIUM ON COMPUTATIONAL MECHANICS (APCOM2013 and ISCM 2013), 11 - 14 December 2013, Singapore.(<font color="blue">presentation + article</font>)</a></li>	
+					<li><a href="https://meetings.aps.org/Meeting/DFD13/Session/A3.5" target="_blank">Zhi Shang, Jing Lou, Hongying Li. A new drag force model based on drift flux for gas-particle two-phase flow. American Physical Society, Division of Fluid Dynamics 66 th Annual Meeting, Pittsburgh, Pennsylvania, November 24 - 26, 2013, USA.(<font color="blue">presentation</font>)</a></li>
+					<!--<li><a href="" target="_blank"> </a></li>-->
+				</ul>
+			</div>
+		</div>
+		<hr/>
+		<div class="inline_block">
+			<h2 >Project: CFD on large scale simulations with complex geometries</h2>
+			<img style="width: 350px; height: 200px;" src="img/fpso.png"> &emsp; &emsp;
+			<img style="width: 350px; height: 200px;" src="img/fpsomesh.png">  &emsp; &emsp;
+			<img style="width: 250px; height: 210px;" src="img/fpsosim1.png">
+			<img style="width: 250px; height: 220px;" src="img/fpsosim2.png">
+			<div class="col-sm-6">
+				<p >The geometry is in STL format.</p>
+				<p >The mesh was generated using snappyHexMesh in OpenFOAM.</p>
+				<p >The pictures show the exhaust gas released from the chimneys on FPSO (floating production storage and offloading) simulated by FLUENT using the mesh generated by OpenFOAM and post-processed by Ensight.</p>
+			</div>
+			<div>
+				<p>Publication Journals:</p>
+				<ul>
+					<li><a href="https://www.sciencedirect.com/science/article/pii/S0045793014003016" target="_blank">Zhi Shang. Impact of mesh partitioning methods in CFD for large scale parallel computing. Computers and Fluids, 103, 2014, 1-5.</a></li>
+					<li><a href="https://www.hindawi.com/journals/je/2013/850148/" target="_blank">Zhi Shang. Large scale CFD parallel computing dealing with massive mesh. Journal of Engineering, Volume 2013, Article ID 850148, 6 pages.</a></li>
+					<li><a href="https://www.sciencedirect.com/science/article/pii/S001046551200313X" target="_blank">Zhi Shang. Performance analysis of large scale parallel CFD computing based on Code_Saturne. Computer Physics Communications, 184(2), 2013, 381-386.</a></li>	
+					<li><a href="https://www.sciencedirect.com/science/article/pii/S0045793011000351" target="_blank">Y. Fournier, J. Bonelle, C. Moulinec, Z. Shang, A. Sunderland, J. Uribe. Optimizing Code Saturne computations on Petascale systems. Computers & Fluids, 45(1), 2011, 103-108.</a></li>
+				</ul>	    
+				<p>Publication Conferences:</p>
+				<ul>
+					<li>Y. Fournier, J. Bonelle, C. Moulinec, Z. Shang, A. Sunderland, J. Uribe. Developing Code_Saturne for computing at the Petascale. 22nd International Conference on Parallel Computational Fluid Dynamics, May 17 - 21, 2010, Kaohsiung, Taiwan.(<font color="blue">presentation + article</font>)</li>
+				</ul>
+			</div>
+		</div>
+		<hr/>
+		<div class="inline_block">
+			<h2 >Project: LBM for multiphase flow</h2>
+			<img style="width: 350px; height: 200px;" src="img/lbmdrop.gif">  
+			<img style="width: 350px; height: 200px;" src="img/lbmpara.gif"> 
+			<img style="width: 350px; height: 250px;" src="img/lbmspeed.png">
+			<div class="col-sm-6">
+				<p >The in-house code was developed using Fortran90.</p>
+				<p >The MPI was used to parallize the LBM code.</p>
+				<p >The mesh size is 1024*1024*1024 above 1 billion.</p>
+			</div>
+			<div class="clear_left_float">
+				<p>Publication Journals:</p>
+				<ul>
+					<li><a href="http://www.ikprress.org/index.php/AJOMCOR/article/view/273" target="_blank">Zhi Shang, Baili Zhang, Ming Cheng, Jing Lou, Xiaodong Niu. Parallelization of 3D immersed boundary lattice Boltzmann method for large scale solid particle suspension flow using MPI and OpenMP. Asian Journal of Mathematics and Computer Research, 10(2), 2016, 165-178.</a></li>
+					<li><a href="https://www.worldscientific.com/doi/abs/10.1142/S1793962313500244" target="_blank">Zhi Shang, Ming Cheng, Jing Lou. Parallelization of lattice Boltzmann method for a drop impact on a wetted solid wall. International Journal of Modeling, Simulation, and Scientific Computing, 5(2), 2014, Article ID 1350024, 13pages.</a></li>
+					<!--<li><a href="" target="_blank"> </a></li>-->	
+				</ul>	    
+				<p>Publication Conferences:</p>
+				<ul>
+					<li><a href="http://adsabs.harvard.edu/abs/2014APS..DFDL31007Z" target="_blank">Baili Zhang, Ming Cheng, Zhi Shang, Jing Lou. An Immersed Boundary-Lattice Boltzmann Approach to the Direct Numerical Simulation of Complex Particulate Flows. American Physical Society, Division of Fluid Dynamics 67th Annual Meeting, San Francisco, California, November 23 - 25, 2014, USA. (<font color="blue">presentation</font>)</a></li>	
+					<li>Zhi Shang, Yufeng Yao. Lattice Boltzmann large-eddy simulation of turbulent cavity flow. The Fifth International Conference for Mesoscopic Methods in Engineering and Science (ICMMES), June 16 - 20, 2008, Amsterdam,Netherlands. (<font color="blue">presentation</font>)</li>
+				</ul>
+			</div>
+		</div>
+		<hr/>
+		<div class="inline_block">
+			<h2 >Project: hurricane simulation and forecasting</h2>
+			<img style="width: 300px; height: 400px;" src="img/Katrina.gif">
+			<div class="col-sm-6">
+				<p >The solver was developed under MPI parallel computing.</p>
+				<p >The coupler was employed to couple atmosphere, land and ocean models based on MCT (Modeling Coupling Toolkit) for dealing with couplig of multiple grids, multiple physics and multiple processors.</p>
+				<p >In the animation, the hurricane Katrina, which emerged and developed into the Gulf of Mexico from August 27, 2005 to August 30, 2005, was simulated. The life track was fully numerically reproduced. The storm growing from a Category 3 hurricane to a Category 5 hurricane was also captured by the simulation after entering the Gulf of Mexico.</p>
+			</div>	
+		</div>
+	</div> <!-- /container -->	
 </body>
-
 </html>
