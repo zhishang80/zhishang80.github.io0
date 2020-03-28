@@ -1,91 +1,196 @@
 @import url(http://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic);
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
-
 * {
     -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-  }
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
-body { padding-top: 20px; padding-bottom: 40px; font-family: 'Merriweather', Georgia, Times; font-size: 18px; }
-.clear_left_float{
+body {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-family: 'Merriweather', Georgia, Times;
+    font-size: 18px;
+}
+
+.clear_left_float {
     clear: left;
 }
-.inline_block{
+
+.inline_block {
     display: inline-block;
 }
-.text-bold{
+
+.text-bold {
     font-weight: bold;
 }
-.slide-box{
-    margin-top: 1em; 
-    padding-top: 1em; 
+
+.slide-box {
+    margin-top: 1em;
+    padding-top: 1em;
     padding-bottom: 1em;
     border: 1px #CCC dotted;
     border-radius: 15px;
 }
+
+.rotationd {
+    position: relative;
+    margin: -100px 0px -100px;
+    overflow: hidden;
+}
+
+.cfd {
+    width: 100px;
+    height: 100px;
+    margin: 100px auto;
+    float: left;
+    border-top: 6px solid #1ca9c8;
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: relative;
+    line-height: 100px;
+    text-align: center;
+    animation: rotation 1s linear 0s infinite normal both;
+}
+
+.hpc {
+    width: 100px;
+    height: 100px;
+    margin: 100px auto;
+    float: right;
+    border-top: 6px solid #1ca9c8;
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: relative;
+    line-height: 100px;
+    text-align: center;
+    animation: rotation 1s linear 0s infinite normal both;
+}
+
+.cfd span,
+.hpc span {
+    display: inline-block;
+    animation: rotation 1s linear 0s infinite reverse both;
+}
+
+.cfd::before,
+.hpc::before,
+.cfd::after,
+.hpc::after {
+    content: " ";
+    position: absolute;
+    top: -6px;
+    left: 0;
+    border-top: 6px solid #aabb33;
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    transform: rotate(120deg);
+}
+
+.cfd::after,
+.hpc::after {
+    transform: rotate(240deg);
+    border-color: #ff0000;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .footer-box {
-    text-align: center; 
-    font-size: 16px; 
+    text-align: center;
+    font-size: 16px;
 }
 
 #rolling-box {
-  max-width: auto;
-  width: 100%;
-  height: 250px;
-  position: relative;
-  overflow: hidden;
+    max-width: auto;
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
 }
 
 #rolling {
-  max-width: auto;
-  width: 100%;
-  height: 250px;
-  position: absolute;
+    max-width: auto;
+    width: 100%;
+    height: 250px;
+    position: absolute;
 }
+
 #rolling ul {
-  position: absolute;
-  top: 0px;
-  left: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
+
+#rrolling ul li {
+    list-style-type: none;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
 #rolling ul li {
-  list-style-type: none;
-  float: left;
-  width: auto;
-  height: auto;
-  margin: 0px;
-  border: 0px;
+    list-style-type: none;
+    float: left;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    border: 0px;
 }
+
+#rrolling img {
+    width: 250x;
+    height: 250px;
+}
+
 #rolling img {
-  width: 250x;
-  height: 250px;
-  border: 1px solid orange;
+    width: 250x;
+    height: 250px;
+    border: 1px solid orange;
 }
+
 
 /* Left & right buttons */
-.left, .right {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+
+.left,
+.right {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
+
 
 /* Position the "right button" to the right */
+
 .right {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
+
 
 /* On hover, add a black background color with a little bit see-through */
-.left:hover, .right:hover {
-  background-color: rgba(0,0,0,0.8);
-}
 
+.left:hover,
+.right:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
