@@ -1,73 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">	
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" width="device-width, initial-scale=1.0">
     <meta name="description" content="main page.">
     <meta name="author" content="Zhi Shang">
-    <title>Zhi Shang | CFD</title>		
+    <title>Zhi Shang | CFD</title>
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/jumbotron-narrow.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">		
-	<!-- js -->
-	<script type="text/javascript" src="js/slide_auto.js"></script>
-	<script type="text/javascript">
-		window.onload = function() {fnBackGroundSlide("autoSlides");fnBackGroundRoll("rolling-box", "rolling");}
-	 </script>
-</head>	
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- js -->
+    <script type="text/javascript" src="js/slide_auto.js"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            fnBackGroundSlide("autoSlides");
+            fnBackGroundRoll("rolling-box", "rolling");
+        }
+    </script>
+</head>
+
 <body>
-	<div class="container">
-		<div class="header">
-			<ul class="nav nav-pills pull-right">
-				<li class="passive"><a href="research" title="Research">Research</a></li>
-				<li class="passive"><a href="cv" title="CV">CV</a></li>
-				<li class="passive"><a href="contact" title="Contact">Contact</a></li>
-			</ul>
-			<h3 class="text-muted"><a href="/">Zhi Shang</a></h3>
-		</div> <!-- header -->
-		<div class="row marketing">
-			<div class="col-sm-push-6">
-				<img style="width: 300px; float: left; margin-right: 4em;" class="img-circle avatar" alt="Zhi Shang Photo" src="img/zhishang.png">
-				<div class="col-xs-7 slide-box" id="autoSlides">
-					<p class="text-bold text-warning">Compressible and incompressible fluid flow</p>
-					<p class="text-bold text-warning">Heat transfer: cooling, heating, melting and icing</p>
-					<p class="text-bold text-warning">Multiphase flow: VOF, coupled VOF and level set, MP-PIC</p>
-					<p class="text-bold text-warning">Chemical reaction: flare, combustion and flame propagation</p>
-					<p class="text-bold text-success">Experiences in computational fluid dynamics (CFD) over 15 years</p>
-				</div> <!-- col-xs-6 bgpic -->
-			</div> <!-- col-sm-push-6 -->
-		</div> <!-- row marketing -->
-		<div class="clear_left_float">
-			<p class="lead text-bold">Qualifications:</p>
-			<p>Multiphase flow modeling of Mixture, Euler-Euler and Eulerian-Lagrangian approaches.</p>
-			<p>Interface dynamics and phase change using VOF, Level Set and CLSVOF with heat transfer.</p>
-			<p>Discrete phase modeling with DPM (discrete particle model) and DEM (discrete element method).</p>
-			<p>Multi-physics simulations through FSI (fluid-structure interaction) and LBM (lattice Boltzmann method).</p>
-			<p>Hypersonic (shock wave capture) and rarefied flows (3D DSMC-direct simulation Monte Carlo).</p>
-			<p>Parallel Programming using MPI, OpenMP, OpenACC and CUDA (GPUs), vectorization (MICs).</p>
-			<p>Earth system models (ESMs) coupling, simulation and forecasting.</p>
-		</div> <!-- clear_left_float -->
-		<div id="rolling-box">
-			<div id="rolling">
-				<ul id="iterms">
-					<li class="iterm"><img src="research/img/lbmdrop.gif"></li>
-					<li class="iterm"><img src="research/img/rotationc.gif"></li>
-					<li class="iterm"><img src="research/img/Katrina.gif"></li>
-					<li class="iterm"><img src="research/img/porousmedia.gif"></li>
-					<li class="iterm"><img src="research/img/rotationr.gif"></li>
-					<li class="iterm"><img src="research/img/motor.gif"></li>
-					<li class="iterm"><img src="research/img/propellervof.gif"></li>
-					<li class="iterm"><img src="research/img/fpsomesh.png"></li>
-				</ul>
-			</div>
-			<!-- Left and right buttons -->
-			<a class="left" href="javascript:;">&#10094;</a>
-			<a class="right" href="javascript:;">&#10095;</a>
-		</div>
-	</div> <!-- /container -->
-	<footer class="footer footer-box">
-		<p>Copyright &copy; 2020-2022, Personal website &reg;. Rights reserved &forall;</p>
-	</footer>
+    <div class="container">
+        <div class="header">
+            <ul class="nav nav-pills pull-right">
+                <li class="passive"><a href="research" title="Research">Research</a></li>
+                <li class="passive"><a href="cv" title="CV">CV</a></li>
+                <li class="passive"><a href="contact" title="Contact">Contact</a></li>
+            </ul>
+            <h3 class="text-muted"><a href="/">Zhi Shang</a></h3>
+        </div>
+        <!-- header -->
+        <div class="row marketing">
+            <div class="col-sm-push-6">
+                <img style="width: 300px; float: left; margin-right: 4em;" class="img-circle avatar" alt="Zhi Shang Photo" src="img/zhishang.png">
+                <div class="col-xs-7 slide-box" id="autoSlides">
+                    <p class="text-bold text-warning">Compressible and incompressible fluid flow</p>
+                    <p class="text-bold text-warning">Heat transfer: cooling, heating, melting and icing</p>
+                    <p class="text-bold text-warning">Multiphase flow: VOF, coupled VOF and level set, MP-PIC</p>
+                    <p class="text-bold text-warning">Chemical reaction: flare, combustion and flame propagation</p>
+                    <p class="text-bold text-success">Experiences in computational fluid dynamics (CFD) over 15 years</p>
+                </div>
+                <!-- col-xs-6 bgpic -->
+            </div>
+            <!-- col-sm-push-6 -->
+        </div>
+        <!-- row marketing -->
+        <div class="clear_left_float">
+            <p class="lead text-bold">Qualifications:</p>
+            <p>Multiphase flow modeling of Mixture, Euler-Euler and Eulerian-Lagrangian approaches.</p>
+            <p>Interface dynamics and phase change using VOF, Level Set and CLSVOF with heat transfer.</p>
+            <p>Discrete phase modeling with DPM (discrete particle model) and DEM (discrete element method).</p>
+            <p>Multi-physics simulations through FSI (fluid-structure interaction) and LBM (lattice Boltzmann method).</p>
+            <p>Hypersonic (shock wave capture) and rarefied flows (3D DSMC-direct simulation Monte Carlo).</p>
+            <p>Parallel Programming using MPI, OpenMP, OpenACC and CUDA (GPUs), vectorization (MICs).</p>
+            <p>Earth system models (ESMs) coupling, simulation and forecasting.</p>
+        </div>
+        <!-- clear_left_float -->
+        <div class="clear_left_float rotationd">
+            <div class="cfd">
+                <span>CFD</span>
+            </div>
+            <div class="hpc">
+                <span>HPC</span>
+            </div>
+        </div>
+        <div id="rolling-box">
+            <div id="rolling">
+                <ul id="iterms">
+                    <li class="iterm"><img src="research/img/lbmdrop.gif"></li>
+                    <li class="iterm"><img src="research/img/rotationc.gif"></li>
+                    <li class="iterm"><img src="research/img/Katrina.gif"></li>
+                    <li class="iterm"><img src="research/img/porousmedia.gif"></li>
+                    <li class="iterm"><img src="research/img/rotationr.gif"></li>
+                    <li class="iterm"><img src="research/img/motor.gif"></li>
+                    <li class="iterm"><img src="research/img/propellervof.gif"></li>
+                    <li class="iterm"><img src="research/img/fpsomesh.png"></li>
+                </ul>
+            </div>
+            <!-- Left and right buttons -->
+            <a class="left" href="javascript:;">&#10094;</a>
+            <a class="right" href="javascript:;">&#10095;</a>
+        </div>
+    </div>
+    <!-- /container -->
+    <footer class="footer footer-box">
+        <p>Copyright &copy; 2020, Personal website &reg;, Rights reserved &forall;</p>
+    </footer>
 </body>
+
 </html>
