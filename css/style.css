@@ -9,7 +9,7 @@
 body {
     padding-top: 20px;
     padding-bottom: 40px;
-    font-family: 'Merriweather', Georgia, Times;
+    font-family: Arial, 'Merriweather', Georgia, Times;
     font-size: 18px;
 }
 
@@ -33,7 +33,14 @@ body {
     border-radius: 15px;
 }
 
-.rotationd {
+#bgc-changing {
+    --x: 0px;
+    --y: 0px;
+    border-radius: 5px;
+    background: radial-gradient(circle at var(--x) var(--y), white, lightgrey);
+}
+
+.rotationed {
     position: relative;
     margin: -100px 0px -100px;
     overflow: hidden;
@@ -101,6 +108,26 @@ body {
     }
     to {
         transform: rotate(360deg);
+    }
+}
+
+.strip {
+    height: 40px;
+    width: 720px;
+    position: absolute;
+    left: 200px;
+    top: 120px;
+    background: repeating-linear-gradient(45deg, #f00 0px, #00f 15px, #0f0 15px, #f69d3c 30px);
+    background-size: 42px 40px;
+    animation: running-strip 1s linear 0s infinite normal both;
+}
+
+@keyframes running-strip {
+    from {
+        background-position: -42px 0px;
+    }
+    to {
+        background-position: 0px 0px;
     }
 }
 
