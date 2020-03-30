@@ -17,6 +17,7 @@
         window.onload = function() {
             fnBackGroundSlide("autoSlides");
             fnBackGroundRoll("rolling-box", "rolling");
+            fnBackGroundGradient("#bgc-changing");
         }
     </script>
 </head>
@@ -47,7 +48,7 @@
             <!-- col-sm-push-6 -->
         </div>
         <!-- row marketing -->
-        <div class="clear_left_float">
+        <div class="clear_left_float" id="bgc-changing">
             <p class="lead text-bold">Qualifications:</p>
             <p>Multiphase flow modeling of Mixture, Euler-Euler and Eulerian-Lagrangian approaches.</p>
             <p>Interface dynamics and phase change using VOF, Level Set and CLSVOF with heat transfer.</p>
@@ -58,13 +59,14 @@
             <p>Earth system models (ESMs) coupling, simulation and forecasting.</p>
         </div>
         <!-- clear_left_float -->
-        <div class="clear_left_float rotationd">
+        <div class="clear_left_float rotationed">
             <div class="cfd">
                 <span>CFD</span>
             </div>
             <div class="hpc">
                 <span>HPC</span>
             </div>
+            <!--<div class="strip"></div>-->
         </div>
         <div id="rolling-box">
             <div id="rolling">
